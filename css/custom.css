@@ -10,6 +10,7 @@ body {
   	padding-top: 70px;
   	background-color: #000;
   	color: #FFF;
+  	position: relative;
 }
 /* 	=============
 	typography and
@@ -151,6 +152,12 @@ ul ul {
 .navbar-default .navbar-toggle:focus {
 	background-color: #c41f1f;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	background-color: #c41f1f;
+	color: #751212;
+}
 /* 	=============
 	jumbotron  */
 .jumbotron {
@@ -177,10 +184,12 @@ ul ul {
 /* 	=============
 	o nama  */
 #o-nama,
+#usluge,
 #radovi,
-#reference {
-	text-align: center;
-	padding: 3em 0;
+#reference,
+#contact {
+	padding-top: 120px;
+	margin-top: -40px;
 }
 #o-nama .text-container {
 	max-width: 550px;
@@ -202,10 +211,6 @@ ul ul {
 }
 /* 	=============
 	usluge  */
-
-#usluge {
-	text-align: center;
-}
 #usluge h2 {
 	color: #c41f1f;
 }
@@ -242,11 +247,27 @@ ul ul {
 	margin: 0;
 }
 /* 	=============
+	radovi video  */
+#video-section {
+	padding-top: 80px;
+}
+/* 	=============
+	reference  */
+#reference {
+	padding-bottom: 80px;
+}
+/* 	=============
+	google map  */
+#map-canvas {
+    width: 100%;
+    height: 450px;
+}
+/* 	=============
 	contact  */
 #contact {
-	padding: 3em 0;
-	background: url(../images/contact-bg.jpg) center;
+	background: url(../images/contact-bg.jpg) no-repeat center;
 	background-size: cover;
+	padding-bottom: 80px;
 }
 #contact p {
 	margin-bottom: .3em;
@@ -292,13 +313,6 @@ input[type="email"] {
 input[placeholder] { text-overflow: ellipsis; }
 ::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
 input:-moz-placeholder { text-overflow: ellipsis; }
-
-/* 	=============
-	google map  */
-#map-canvas {
-    width: 100%;
-    height: 450px;
-}
 /* 	=============
 	footer  */
 footer {
