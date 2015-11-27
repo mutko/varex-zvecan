@@ -558,21 +558,23 @@
           <div class="separator-container">
             <div class="separator line-separator"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span></div>
           </div><!-- separator-container -->
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5 col-md-6 col-sm-6">
+          <article class="contact-info col-lg-5 col-lg-offset-1 col-md-6 col-sm-6" itemscope itemtype="http://schema.org/LocalBusiness">
             <p>Iskoristite formu <span class="visible-xs-inline">ispod</span><span class="hidden-xs">na desnoj strani</span> da stupite u kontakt. Ako ste u žurbi ili ste blizu nas i hoćete da svratite, pozovite nas preko telefonskog broja koji je ispisan ispod.</p>
             <p><b>INFO:</b></p>
             <ul class="list-unstyled">
-              <li><p>Samostalna zanatska radnja "VAREX"</p></li>
+              <li><p itemprop="name">Samostalna zanatska radnja "VAREX"</p></li>
               <li>Telefoni:
                 <ul>
-                  <li>065/88 13 302</li>
-                  <li>064/359 64 63</li>
-                  <li>045/681 301</li>
+                  <li itemprop="telephone">065/88 13 302</li>
+                  <li itemprop="telephone">064/359 64 63</li>
+                  <li itemprop="telephone">045/681 301</li>
                 </ul>
               </li>
-              <li>Adresa: Zvečan</li>
-              <li>E-mail: varex.zvecan@gmail.com</li>
+                <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Adresa:
+                  <span itemprop="streetAddress">Kralja Petra I 56</span>,
+                  <span itemprop="postalCode">38227</span>
+                  <span itemprop="addressLocality">Zvečan, Srbija</span></li>
+                  <li>E-mail: <span itemprop="email">varex.zvecan@gmail.com</span></li>
             </ul>
           <!--  <p><b>RADNO VREME:</b></p>
             <ul class="list-unstyled">
@@ -584,9 +586,9 @@
               <li><a href="#" title="Pronađite nas na fejsbuku"><img src="images/fb.png" width="40" height="40" alt="Facebook logo"></a></li>
               <li><a href="#" title="Pronađite nas na guglu"><img src="images/google.png" width="40" height="40" alt="Google logo"></a></li>
             </ul> -->
-          </div><!-- col -->
+          </article><!-- contact-info -->
          
-          <div class="col-lg-5 col-md-6 col-sm-6 contact-form">
+          <article class="col-lg-5 col-md-6 col-sm-6 contact-form">
             <form>
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Vaše ime">
@@ -599,8 +601,7 @@
               </div>
               <button type="submit" class="btn btn-default btn-lg">Pošalji poruku</button>
             </form>
-          </div><!-- col -->
-          <div class="col-lg-1"></div>
+          </article><!--  contact-form -->
         </div><!-- row -->
       </div><!-- container -->
     </section><!-- kontakt -->
