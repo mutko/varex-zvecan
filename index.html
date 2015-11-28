@@ -576,6 +576,8 @@
                   <span itemprop="addressLocality">Zvečan, Srbija</span></li>
                   <li>E-mail: <span itemprop="email">varex.zvecan@gmail.com</span></li>
             </ul>
+              <!-- Logo just for microdata, no display on page -->
+              <img itemprop="logo" src="images/logo.png" alt="Varex logo" title="SZR Varex - Zvecan" style="display: none">
           <!--  <p><b>RADNO VREME:</b></p>
             <ul class="list-unstyled">
               <li>Ponedeljak - Petak: 7h - 18h</li>
@@ -661,6 +663,22 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- custom.js (custom javascript) -->
     <script src="js/custom.js"></script>
+
+    <!-- google knowledge graph -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "SZR Varex",
+        "url": "http://www.varex.rs",
+        "contactPoint" : [{
+          "@type": "ContactPoint",
+          "telephone": "+381-658813302",
+          "contactPoint": "customer support"
+        }],
+        "logo": "http://www.varex.rs/images/logo.png"
+      }
+    </script>
 
   </body>
 </html>
