@@ -1,0 +1,444 @@
+/* colors 
+	#c41f1f  -  crvena svetla;
+	#751212  -  crvena tamna;
+*/
+body {
+	font-family: 'Oswald', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 400;
+  	line-height: 1.45;
+  	font-size: 18px;
+  	padding-top: 70px;
+  	background-color: #000;
+  	color: #FFF;
+  	position: relative;
+}
+/* 	=============
+	typography and
+	common styles  */
+p {
+	margin-bottom: 1.3em;
+	font-size: 1.125em;
+	line-height: 1.5;
+}
+h1, h2, h3, h4 {
+	margin: 1.414em 0 0.5em;
+	font-weight: inherit;
+	line-height: 1.2;
+}
+h1 {
+	margin-top: 0;
+	font-size: 2.827em;
+	text-shadow: 1px 1px 1px rgb(255,255,255,255);
+}
+section h1 {
+	text-transform: uppercase;
+	text-align: center;
+}
+h2 {
+	font-size: 1.999em;
+}
+section h2 {
+	text-align: center;
+}
+h3 {
+	font-size: 1.414em;
+}
+a {
+	color: #333;
+}
+a:active {
+	outline: 0;
+}
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+small, .font-small {
+	font-size: 0.707em;
+}
+nav {
+	text-transform: uppercase;
+}
+ul ul {
+	list-style-type: none;
+}
+.btn-default {
+	background-color: #c41f1f;
+	border: none;
+	border-radius: 0;
+	color: white;
+	padding: 20px 35px;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+	background-color: #751212;
+	color: white;
+}
+.blueimp-gallery>.slides>.slide-loading {
+	background: url(../images/loading.gif) center no-repeat;
+}
+/* 	=============
+	separator  */
+.separator-container {
+	text-align: center;
+  	position: relative;
+}
+.separator-container .separator {
+  	color: #c41f1f;
+  	margin: 0 auto 1em;
+  	width: 11em;
+}
+.separator-container .separator.line-separator:before, .separator-container .separator.line-separator:after {
+	display: block;
+	width: 40%;
+	content: " ";
+	border: 1px solid #c41f1f;
+}
+.separator-container .separator.line-separator:before {
+  	float: left;
+}
+.separator-container .separator.line-separator:after {
+  	float: right;
+}
+.separator .glyphicon {
+	top: -10px;
+}
+/* 	=============
+	nav  */
+.navbar {
+	background-color: #c41f1f;
+	margin-bottom: 0;
+	border-radius: 0;
+	border: none;
+}
+.navbar-header {
+	border: none;
+}
+.navbar-brand {
+	padding: 0 60px;
+	height: 70px;
+	background-color: #000;
+}
+.navbar-default .navbar-brand:hover {
+	background-color: #000;
+}
+.navbar-brand img {
+	height: 70px;
+	padding: 0 10px;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #751212;
+}
+.nav>li>a {
+    padding: 10px 15px;
+}
+.navbar-default .navbar-toggle {
+	margin-top: 18px;
+	border: none;
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFF;
+	width: 30px;
+	height: 3px;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color: #c41f1f;
+}
+.navbar-default .navbar-toggle:focus {
+	background-color: #c41f1f;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	background-color: #c41f1f;
+	color: #751212;
+}
+/* 	=============
+	jumbotron  */
+.jumbotron {
+	background: url(../images/varioc.jpg) #000 no-repeat center;
+	background-size: cover;
+	color: #FFF;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.9);
+	min-height: 450px;
+	margin-bottom: 0;
+}
+.jumbotron h1 {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+.jumbotron h3 {
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+.phone {
+	color: #c41f1f;
+	font-size: 1.6em;
+	text-shadow: 5px 5px 5px rgb(0,0,0);
+}
+/* 	=============
+	o nama  */
+#o-nama,
+#usluge,
+#radovi,
+#reference,
+#contact {
+	padding-top: 120px;
+	margin-top: -40px;
+}
+#o-nama .text-container {
+	max-width: 550px;
+	margin: 0 auto;
+}
+#o-nama .modal-content {
+	color: #333;
+	border-radius: 0;
+}
+#o-nama .modal-header,
+#o-nama .modal-footer {
+	border: none;
+}
+#o-nama .modal-body {
+	text-align: left;
+}
+.close {
+	font-size: 40px;
+}
+/* 	=============
+	usluge  */
+#usluge h2 {
+	color: #c41f1f;
+}
+#usluge img {
+	margin: 0 auto;
+}
+/* 	=============
+	radovi foto  */
+.tab-pane [class^="col-"] {
+	padding-left: 0;
+	padding-right: 0;
+} /* jedan do drugog, no padding */
+.nav-tabs {
+	border-bottom: 0;
+}
+.nav-tabs > li > a {
+	border-radius: 0;
+	color: #FFF;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	color: #c41f1f;
+}
+.nav-tabs > li > a:focus {
+	background: none;
+	color: #FFF;
+}
+.gallery img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+.gallery img:hover {
+	filter: none;
+  	-webkit-filter: grayscale(0%);
+}
+.gallery img {
+	margin: 0;
+}
+/* 	=============
+	radovi video  */
+#video-section {
+	padding-top: 80px;
+}
+/* 	=============
+	reference  */
+#reference {
+	padding-bottom: 80px;
+}
+/* 	=============
+	google map  */
+#map-canvas {
+    width: 100%;
+    height: 450px;
+}
+/* 	=============
+	contact  */
+#contact {
+	background: url(../images/contact-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding-bottom: 80px;
+}
+#contact p {
+	margin-bottom: .3em;
+}
+.contact-form .btn {
+	display: block;
+	width: 100%;
+}
+.social li {
+	display: inline;
+}
+.social img {
+	opacity: .7;
+	filter: alpha(opacity=70);
+}
+.social img:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.form-control {
+	border-radius: 0;
+	padding: 10px 25px;
+	height: auto;
+}
+input.form-control::-webkit-input-placeholder {
+	color: #555;
+}
+input.form-control::-moz-placeholder { 
+	color: #555; 
+    opacity: 1;
+}
+input.form-control:-moz-placeholder { 
+	color: #555;
+    opacity: 1;
+}
+input.form-control::-ms-input-placeholder { 
+	color: #555;
+}	/* IE10+ */
+input[type="text"],
+input[type="email"] {
+	color: #555;
+}
+input[placeholder] { text-overflow: ellipsis; }
+::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
+input:-moz-placeholder { text-overflow: ellipsis; }
+/* 	=============
+	footer  */
+footer {
+	background-color: #c41f1f;
+	color: #FFF;
+	padding: 4em 0;
+	position: relative;
+}
+footer a {
+	color: #FFF;
+}
+footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+footer img {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.info {
+	margin: 1em 0;
+}
+.social-fb {
+	opacity: .8;
+	filter: alpha(opacity=80);
+}
+.social-footer:hover {
+	opacity: .9;
+	filter: alpha(opacity=90);
+}
+.prava {
+	text-align: center;
+	font-size: .8em;
+}
+.na-vrh {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-size: 1.5em;
+}
+
+/* 	=============
+	media queries */
+
+/* Custom Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	body {
+		font-size: 16px;
+		padding-top: 60px;
+	}
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+	.navbar-brand {
+		padding: 0;
+	}
+	.navbar-brand img {
+		height: 60px;
+	}
+	.jumbotron h1 {
+		font-size: 1.7em;
+	}
+	.jumbotron h3 {
+		font-size: 1.1em;
+	}
+} /* END of custom Extra Small Devices, Phones */ 
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.nav>li>a {
+	    padding: 25px 5px;
+	}
+	.jumbotron h1 {
+		font-size: 2.827em;
+	}
+	.izrada {
+		text-align: right;
+	}
+	.index-gallery img,
+	#radovi-foto img {
+		margin: 0;
+	}
+    .contact-form {
+		padding-left: 2em;
+	}
+	.info {
+		margin: 0;
+	}
+}/* end of tablets styles */
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.nav>li>a {
+	    padding: 25px;
+	}
+    .jumbotron {
+    	padding: 80px 70px 0;
+    }
+    .jumbotron h1 {
+		font-size: 3em;
+	}
+	.jumbotron h3 {
+		font-size: 1.8em;
+	}
+}/* end of desktops styles */
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.navbar-brand {
+		padding: 0 100px;
+	}
+	.nav>li>a {
+		padding-left: 40px;
+		padding-right: 40px; 
+	}
+    .jumbotron {
+    	padding: 120px 100px 0;
+    	min-height: 650px;
+    }
+}/* end of large desktops styles */
