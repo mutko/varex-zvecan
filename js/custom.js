@@ -113,5 +113,20 @@ $(function() {
           rolbar = this.getElementsByTagName('a');
       blueimp.Gallery(rolbar, options);
   };
+
+  // blueimp-gallery za radionica
+  document.getElementById('radionica').onclick = function (event) {
+      event = event || window.event;
+      var target = event.target || event.srcElement,
+          link = target.src ? target.parentNode : target,
+          options = {index: link, event: event},
+          radionica = this.getElementsByTagName('a');
+      blueimp.Gallery(radionica, options);
+  };
+
+  var video = document.getElementById('video');
+    video.addEventListener('click',function(){
+      video.play();
+  },false);
   
 });
