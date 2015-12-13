@@ -11,7 +11,7 @@
 
     <!-- google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    
+
     <!-- gallery css -->
     <link href="css/blueimp-gallery.min.css" rel="stylesheet">
 
@@ -33,27 +33,6 @@
 
     <!-- google map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      // google map init javascript      
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var myLatlng = new google.maps.LatLng(42.9093762, 20.8392077);
-        var mapOptions = {
-          scrollwheel: false,
-          center: myLatlng,
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'VAREX Zvečan'
-          });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
   </head>
 
   <body id="top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -89,7 +68,7 @@
     
     <div class="jumbotron">
       <div class="container-fluid">
-        <div class="row">
+        <article class="row">
           <div class="zavarivanje col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <h1>Zavarivanje</h1>
             <h3>Legura aluminijuma, bakra, prohroma...<h3>
@@ -100,7 +79,7 @@
             <h3>Metalnih konstrukcija<h3>
             <h3>Kapije, ograde i<br>enterijer od kovanog gvožđa<h3>
           </div>
-        </div>
+        </article>
           <h3 class="pozovite text-center"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &nbsp;Pozovite nas<br><span class="phone">+38165/8 813 302</span><h3>
       </div><!-- container-fluid -->
     </div><!-- jumbotron -->
@@ -667,13 +646,13 @@
                   <div id="felna-1">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Pre reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/pre-1.jpg" width="100%" height="auto">
                           <source src="video/pre-1.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- pre reparacije -->
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Posle reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/posle-1.jpg" width="100%" height="auto">
                           <source src="video/posle-1.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- posle reparacije -->
@@ -685,13 +664,13 @@
                   <div id="felna-2">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Pre reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/pre-2.jpg" width="100%" height="auto">
                           <source src="video/pre-2.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- pre reparacije -->
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Posle reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/posle-2.jpg" width="100%" height="auto">
                           <source src="video/posle-2.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- posle reparacije -->
@@ -703,13 +682,13 @@
                   <div id="felna-3">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Pre reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/pre-3.jpg" width="100%" height="auto">
                           <source src="video/pre-3.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- pre reparacije -->
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Posle reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/posle-3.jpg" width="100%" height="auto">
                           <source src="video/posle-3.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- posle reparacije -->
@@ -721,13 +700,13 @@
                   <div id="felna-4">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Pre reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/pre-4.jpg" width="100%" height="auto">
                           <source src="video/pre-4.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- pre reparacije -->
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Posle reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/posle-4.jpg" width="100%" height="auto">
                           <source src="video/posle-4.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- posle reparacije -->
@@ -739,13 +718,13 @@
                   <div id="felna-5">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Pre reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/pre-5.jpg" width="100%" height="auto">
                           <source src="video/pre-5.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- pre reparacije -->
                     <div class="col-lg-6 col-md-6 col-sm-6">
                       <h3 class="text-center">Posle reparacije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/posle-5.jpg" width="100%" height="auto">
                           <source src="video/posle-5.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- posle reparacije -->
@@ -757,7 +736,7 @@
                   <div id="kapija">
                     <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                       <h3 class="text-center">Automatizacija kapije</h3>
-                        <video id="video" autobuffer controls height="auto" width="100%">
+                        <video id="video" autobuffer controls poster="video/kapija.jpg" width="100%" height="auto">
                           <source src="video/kapija.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
                         </video>
                     </div><!-- col -->

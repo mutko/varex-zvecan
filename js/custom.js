@@ -1,5 +1,32 @@
 $(function() {
 
+      // google map init javascript      
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var myLatlng = new google.maps.LatLng(42.9093762, 20.8392077);
+        var mapOptions = {
+          scrollwheel: false,
+          center: myLatlng,
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [{
+            stylers: [{
+              saturation: -100
+            }] // grayscale map
+          }]
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var image = new google.maps.MarkerImage('images/mapMarker.png');
+        var marker = new google.maps.Marker({
+          position: map.getCenter(),
+          map: map,
+          title: 'VAREX Zvečan',
+          icon: image,
+          labelClass: 'pin'
+          });
+        };
+        google.maps.event.addDomListener(window, 'load', initialize);
+
     // Use smooth scrooling when clicking on navigation (from https://css-tricks.com/snippets/jquery/smooth-scrolling/)
     $('.navbar a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

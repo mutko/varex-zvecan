@@ -127,7 +127,8 @@ ul ul {
 	height: 70px;
 	padding: 0 10px;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus {
 	color: #FFF;
 }
 .navbar-default .navbar-nav>li>a:hover {
@@ -272,7 +273,7 @@ ul ul {
 	google map  */
 #map-canvas {
     width: 100%;
-    height: 450px;
+    height: 400px;
 }
 /* 	=============
 	contact  */
@@ -447,4 +448,7 @@ footer img {
     	padding: 120px 100px 0;
     	min-height: 650px;
     }
+    #map-canvas {
+	    height: 600px;
+	}
 }/* end of large desktops styles */
