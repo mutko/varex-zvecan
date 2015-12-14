@@ -624,12 +624,13 @@
 
               <!-- Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#felna-1-video" aria-controls="home" role="tab" data-toggle="tab">Felna 1</a></li><!-- kapije -->
-                <li role="presentation"><a href="#felna-2-video" aria-controls="profile" role="tab" data-toggle="tab">Felna 2</a></li><!-- ograde i gelenderi -->
-                <li role="presentation"><a href="#felna-3-video" aria-controls="messages" role="tab" data-toggle="tab">Felna 3</a></li><!-- namestaj -->
-                <li role="presentation"><a href="#felna-4-video" aria-controls="settings" role="tab" data-toggle="tab">Felna 4</a></li><!-- stepenista -->
-                <li role="presentation"><a href="#felna-5-video" aria-controls="settings" role="tab" data-toggle="tab">Felna 5</a></li><!-- stepenista -->
-                <li role="presentation"><a href="#kapija-video" aria-controls="settings" role="tab" data-toggle="tab">Automatizacija kapije</a></li><!-- stepenista -->
+                <li role="presentation" class="active"><a href="#felna-1-video" aria-controls="home" role="tab" data-toggle="tab">Felna 1</a></li><!-- Felna 1 -->
+                <li role="presentation"><a href="#felna-2-video" aria-controls="profile" role="tab" data-toggle="tab">Felna 2</a></li><!-- Felna 2 -->
+                <li role="presentation"><a href="#felna-3-video" aria-controls="messages" role="tab" data-toggle="tab">Felna 3</a></li><!-- Felna 3 -->
+                <li role="presentation"><a href="#felna-4-video" aria-controls="settings" role="tab" data-toggle="tab">Felna 4</a></li><!-- Felna 4 -->
+                <li role="presentation"><a href="#felna-5-video" aria-controls="settings" role="tab" data-toggle="tab">Felna 5</a></li><!-- Felna 5 -->
+                <li role="presentation"><a href="#felna-6-video" aria-controls="settings" role="tab" data-toggle="tab">Felna 6</a></li><!-- Felna 6 -->
+                <li role="presentation"><a href="#kapija-video" aria-controls="settings" role="tab" data-toggle="tab">Automatizacija kapije</a></li><!-- kapija -->
               </ul><!-- nav nav-tabs -->
               
               <!-- Tab panes -->
@@ -723,6 +724,24 @@
                         </video>
                     </div><!-- posle reparacije -->
                   </div><!-- felna 5 -->
+                </div><!-- tab-pane -->
+
+                <!-- felna 6 -->
+                <div role="tabpanel" class="tab-pane" id="felna-6-video">
+                  <div id="felna-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <h3 class="text-center">Pre reparacije</h3>
+                        <video id="video" autobuffer controls poster="video/pre-6.jpg" width="100%" height="auto">
+                          <source src="video/pre-6.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
+                        </video>
+                    </div><!-- pre reparacije -->
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <h3 class="text-center">Posle reparacije</h3>
+                        <video id="video" autobuffer controls poster="video/posle-6.jpg" width="100%" height="auto">
+                          <source src="video/posle-6.mp4">Vaš pretraživač ne podržava gledanje ovog videa.
+                        </video>
+                    </div><!-- posle reparacije -->
+                  </div><!-- felna 6 -->
                 </div><!-- tab-pane -->
 
                 <!-- automatizacija kapije -->
@@ -866,7 +885,7 @@
           </article><!-- contact-info -->
          
           <article class="col-lg-5 col-md-6 col-sm-6 contact-form">
-            <form>
+            <form role="form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Vaše ime">
               </div>
