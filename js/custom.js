@@ -3,7 +3,7 @@ $(function() {
       // google map init javascript      
       function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
-        var myLatlng = new google.maps.LatLng(42.9093762, 20.8392077);
+        var myLatlng = new google.maps.LatLng(42.9057304, 20.8373518);
         var mapOptions = {
           scrollwheel: false,
           center: myLatlng,
