@@ -170,26 +170,26 @@ $(function() {
             fullname: {
                 validators: {
                     notEmpty: {
-                        message: 'The username is required and cannot be empty'
+                        message: 'Ime je obavezno'
                     },
                     stringLength: {
                         min: 3,
                         max: 30,
-                        message: 'The username must be more than 3 and less than 30 characters long'
+                        message: 'Ime ne sme biti kraće od 3 niti veće od 30 karaktera'
                     },
                     regexp: {
                         regexp: /^[a-zA-Z0-9_\.]+$/,
-                        message: 'The username can only consist of alphabetical, number, dot and underscore'
+                        message: 'Ime može sadržati samo slova'
                     }
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'The username is required and cannot be empty'
+                        message: 'Email je obavezan'
                     },
                     emailAddress: {
-                        message: 'The input is not a valid email address'
+                        message: 'Nevažeća email adresa'
                     }
                 }
               },
@@ -197,11 +197,10 @@ $(function() {
               validators: {
                 stringLength: {
                     min: 10,
-                    max: 200,
-                    message:'Please enter at least 10 characters and no more than 200'
+                    message:'Molimo unesite najmanje 10 karaktera'
                 },
                 notEmpty: {
-                  message: 'The username is required and cannot be empty'
+                  message: 'Poruka je obavezna'
                 }
               }
             }
