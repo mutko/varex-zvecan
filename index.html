@@ -17,7 +17,8 @@
 
     <!-- bootstrap css -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- validator css -->
+    <link href="css/bootstrapValidator.css" rel="stylesheet">
     <!-- Varex css -->
     <link href="css/custom.css" rel="stylesheet">
 
@@ -885,15 +886,15 @@
           </article><!-- contact-info -->
          
           <article class="col-lg-5 col-md-6 col-sm-6 contact-form">
-            <form role="form">
+            <form role="form" id="defaultForm">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Vaše ime">
+                <input type="text" name="fullname" id="name" class="form-control" placeholder="Vaše ime">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Vaš e-mail">
+                <input type="email"  name="email" id="e_mail" class="form-control" placeholder="Vaš e-mail">
               </div>
               <div class="form-group">
-                <textarea class="form-control" placeholder="Vaša poruka..." rows="6"></textarea>
+                <textarea name="comment" id="message" class="form-control" placeholder="Vaša poruka..." rows="6"></textarea>
               </div>
               <button type="submit" class="btn btn-default btn-lg">Pošalji poruku</button>
             </form>
@@ -947,7 +948,6 @@
         <a href="#top" title="Vrh stranice" class="na-vrh"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
       </div><!-- container -->
     </footer><!-- futer -->
-
     <!-- javascript -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -955,9 +955,10 @@
     <script src="js/blueimp-gallery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- bootstrapValidator javascript -->
+    <script src="js/bootstrapValidator.min.js"></script>
     <!-- custom.js (custom javascript) -->
     <script src="js/custom.js"></script>
-
     <!-- google knowledge graph -->
     <script type="application/ld+json">
       {
@@ -973,6 +974,5 @@
         "logo": "http://www.varex.rs/images/logo.png"
       }
     </script>
-
   </body>
 </html>

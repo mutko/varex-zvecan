@@ -62,7 +62,9 @@ nav {
 ul ul {
 	list-style-type: none;
 }
-.btn-default {
+.btn-default,
+.btn-default[disabled],
+.btn-default[disabled]:hover {
 	background-color: #c41f1f;
 	border: none;
 	border-radius: 0;

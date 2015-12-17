@@ -156,4 +156,63 @@ $(function() {
       video.play();
   },false);
   
+  // bootstrap validator
+  $(document).ready(function() {
+    $('#defaultForm').bootstrapValidator({
+    // live: 'disabled',
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            fullname: {
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 3,
+                        max: 30,
+                        message: 'The username must be more than 3 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_\.]+$/,
+                        message: 'The username can only consist of alphabetical, number, dot and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+              },
+            comment: {
+              validators: {
+                stringLength: {
+                    min: 10,
+                    max: 200,
+                    message:'Please enter at least 10 characters and no more than 200'
+                },
+                notEmpty: {
+                  message: 'The username is required and cannot be empty'
+                }
+              }
+            }
+        }
+    });
+
+    // Validate the form manually
+    $('#validateBtn').click(function() {
+        $('#defaultForm').bootstrapValidator('validate');
+    });
+
+  });
+
 });
