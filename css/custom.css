@@ -62,7 +62,9 @@ nav {
 ul ul {
 	list-style-type: none;
 }
-.btn-default {
+.btn-default,
+.btn-default[disabled],
+.btn-default[disabled]:hover {
 	background-color: #c41f1f;
 	border: none;
 	border-radius: 0;
@@ -127,7 +129,8 @@ ul ul {
 	height: 70px;
 	padding: 0 10px;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus {
 	color: #FFF;
 }
 .navbar-default .navbar-nav>li>a:hover {
@@ -219,11 +222,12 @@ ul ul {
 }
 /* 	=============
 	radovi foto  */
-.tab-pane [class^="col-"] {
+#radovi .tab-pane [class^="col-"],
+#radionica [class^="col-"] {
 	padding-left: 0;
 	padding-right: 0;
 } /* jedan do drugog, no padding */
-.nav-tabs {
+#radovi .nav-tabs {
 	border-bottom: 0;
 }
 .nav-tabs > li > a {
@@ -240,22 +244,27 @@ ul ul {
 	background: none;
 	color: #FFF;
 }
-.gallery img {
+.gallery img,
+#radionica img {
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
 	filter: gray; /* IE6-9 */
 	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	margin: 0;
 }
-.gallery img:hover {
+.gallery img:hover,
+#radionica img:hover {
 	filter: none;
   	-webkit-filter: grayscale(0%);
-}
-.gallery img {
-	margin: 0;
 }
 /* 	=============
 	radovi video  */
 #video-section {
 	padding-top: 80px;
+}
+/* 	=============
+	radionica  */
+#radionica-gallery {
+	margin-top: 80px;
 }
 /* 	=============
 	reference  */
@@ -266,7 +275,8 @@ ul ul {
 	google map  */
 #map-canvas {
     width: 100%;
-    height: 450px;
+    height: 400px;
+    margin-top: 80px;
 }
 /* 	=============
 	contact  */
@@ -441,4 +451,7 @@ footer img {
     	padding: 120px 100px 0;
     	min-height: 650px;
     }
+    #map-canvas {
+	    height: 600px;
+	}
 }/* end of large desktops styles */
