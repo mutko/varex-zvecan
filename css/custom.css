@@ -53,6 +53,9 @@ a:hover {
 	color: #333;
 	text-decoration: none;
 }
+a:focus {
+	text-decoration: none;
+}
 small, .font-small {
 	font-size: 0.707em;
 }
@@ -223,7 +226,8 @@ ul ul {
 /* 	=============
 	radovi foto  */
 #radovi .tab-pane [class^="col-"],
-#radionica [class^="col-"] {
+#radionica [class^="col-"],
+.panel-body [class^="col-"] {
 	padding-left: 0;
 	padding-right: 0;
 } /* jedan do drugog, no padding */
@@ -255,6 +259,31 @@ ul ul {
 #radionica img:hover {
 	filter: none;
   	-webkit-filter: grayscale(0%);
+}
+/* radovi foto visible xs accordion */
+.panel {
+	background-color: transparent;
+}
+.panel-default {
+	border: none;
+}
+.panel-default > .panel-heading {
+	background-color: transparent;
+	border: none;
+	color: #FFF;
+}
+.panel-title {
+	font-size: 24px;
+	text-align: left;
+}
+.panel-title span {
+	padding-right: 15px;
+}
+.panel-title a:hover {
+	color: #c41f1f;
+}
+.panel-body {
+	padding: 0;
 }
 /* 	=============
 	radovi video  */
@@ -397,12 +426,15 @@ footer img {
 	.jumbotron h3 {
 		font-size: 1.1em;
 	}
+	.panel-title {
+		font-size: 18px;
+	}
 } /* END of custom Extra Small Devices, Phones */ 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.nav>li>a {
-	    padding: 25px 5px;
+	    padding: 25px 15px;
 	}
 	.jumbotron h1 {
 		font-size: 2.827em;
@@ -425,7 +457,7 @@ footer img {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 	.nav>li>a {
-	    padding: 25px;
+	    padding: 25px 30px;
 	}
     .jumbotron {
     	padding: 80px 70px 0;
@@ -444,8 +476,8 @@ footer img {
 		padding: 0 100px;
 	}
 	.nav>li>a {
-		padding-left: 40px;
-		padding-right: 40px; 
+		padding-left: 45px;
+		padding-right: 45px; 
 	}
     .jumbotron {
     	padding: 120px 100px 0;

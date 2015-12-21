@@ -23,9 +23,9 @@ $(function() {
           title: 'VAREX Zvečan',
           icon: image,
           labelClass: 'pin'
-          });
-        };
-        google.maps.event.addDomListener(window, 'load', initialize);
+        });
+      };
+      google.maps.event.addDomListener(window, 'load', initialize);
 
     // Use smooth scrooling when clicking on navigation (from https://css-tricks.com/snippets/jquery/smooth-scrolling/)
     $('.navbar a[href*=#]:not([href=#])').click(function() {
@@ -40,176 +40,179 @@ $(function() {
         }
       }
     });
-    
+
+    // activate accordion on small size (hides tabs)
+    $('.myTab').tabCollapse();
+
   // blueimp-gallery za kapije
   document.getElementById('kapije').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          kapije = this.getElementsByTagName('a');
-      blueimp.Gallery(kapije, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    kapije = this.getElementsByTagName('a');
+    blueimp.Gallery(kapije, options);
   };
 
   // blueimp-gallery za ograde
   document.getElementById('ograde').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          ograde = this.getElementsByTagName('a');
-      blueimp.Gallery(ograde, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    ograde = this.getElementsByTagName('a');
+    blueimp.Gallery(ograde, options);
   };
   
   // blueimp-gallery za namestaj
   document.getElementById('namestaj').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          namestaj = this.getElementsByTagName('a');
-      blueimp.Gallery(namestaj, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    namestaj = this.getElementsByTagName('a');
+    blueimp.Gallery(namestaj, options);
   };
 
   // blueimp-gallery za stepenista
   document.getElementById('stepenista').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          stepenista = this.getElementsByTagName('a');
-      blueimp.Gallery(stepenista, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    stepenista = this.getElementsByTagName('a');
+    blueimp.Gallery(stepenista, options);
   };
   
   // blueimp-gallery za felna 1
   document.getElementById('felna_1').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          felna_1 = this.getElementsByTagName('a');
-      blueimp.Gallery(felna_1, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    felna_1 = this.getElementsByTagName('a');
+    blueimp.Gallery(felna_1, options);
   };
   
   // blueimp-gallery za felna 2
   document.getElementById('felna_2').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          felna_2 = this.getElementsByTagName('a');
-      blueimp.Gallery(felna_2, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    felna_2 = this.getElementsByTagName('a');
+    blueimp.Gallery(felna_2, options);
   };
   
   // blueimp-gallery za felna 3
   document.getElementById('felna_3').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          felna_3 = this.getElementsByTagName('a');
-      blueimp.Gallery(felna_3, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    felna_3 = this.getElementsByTagName('a');
+    blueimp.Gallery(felna_3, options);
   };
   
   // blueimp-gallery za felna 4
   document.getElementById('felna_4').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          felna_4 = this.getElementsByTagName('a');
-      blueimp.Gallery(felna_4, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    felna_4 = this.getElementsByTagName('a');
+    blueimp.Gallery(felna_4, options);
   };
   
   // blueimp-gallery za felna 5
   document.getElementById('felna_5').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          felna_5 = this.getElementsByTagName('a');
-      blueimp.Gallery(felna_5, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    felna_5 = this.getElementsByTagName('a');
+    blueimp.Gallery(felna_5, options);
   };
 
   // blueimp-gallery za rolbar
   document.getElementById('rolbar').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          rolbar = this.getElementsByTagName('a');
-      blueimp.Gallery(rolbar, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    rolbar = this.getElementsByTagName('a');
+    blueimp.Gallery(rolbar, options);
   };
 
   // blueimp-gallery za radionica
   document.getElementById('radionica').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          radionica = this.getElementsByTagName('a');
-      blueimp.Gallery(radionica, options);
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    radionica = this.getElementsByTagName('a');
+    blueimp.Gallery(radionica, options);
   };
 
   var video = document.getElementById('video');
-    video.addEventListener('click',function(){
-      video.play();
+  video.addEventListener('click',function(){
+    video.play();
   },false);
   
   // bootstrap validator
   $(document).ready(function() {
     $('#defaultForm').bootstrapValidator({
     // live: 'disabled',
-        message: 'This value is not valid',
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            fullname: {
-                validators: {
-                    notEmpty: {
-                        message: 'Ime je obavezno'
-                    },
-                    stringLength: {
-                        min: 3,
-                        max: 30,
-                        message: 'Ime ne sme biti kraće od 3 niti veće od 30 karaktera'
-                    },
-                    regexp: {
-                        regexp: /^[a-zA-Z0-9_\.]+$/,
-                        message: 'Ime može sadržati samo slova'
-                    }
-                }
-            },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Email je obavezan'
-                    },
-                    emailAddress: {
-                        message: 'Nevažeća email adresa'
-                    }
-                }
-              },
-            comment: {
-              validators: {
-                stringLength: {
-                    min: 10,
-                    message:'Molimo unesite najmanje 10 karaktera'
-                },
-                notEmpty: {
-                  message: 'Poruka je obavezna'
-                }
-              }
-            }
+    message: 'This value is not valid',
+    feedbackIcons: {
+      valid: 'glyphicon glyphicon-ok',
+      invalid: 'glyphicon glyphicon-remove',
+      validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+      fullname: {
+        validators: {
+          notEmpty: {
+            message: 'Ime je obavezno'
+          },
+          stringLength: {
+            min: 3,
+            max: 30,
+            message: 'Ime ne sme biti kraće od 3 niti veće od 30 karaktera'
+          },
+          regexp: {
+            regexp: /^[a-zA-Z0-9_\.]+$/,
+            message: 'Ime može sadržati samo slova'
+          }
         }
-    });
+      },
+      email: {
+        validators: {
+          notEmpty: {
+            message: 'Email je obavezan'
+          },
+          emailAddress: {
+            message: 'Nevažeća email adresa'
+          }
+        }
+      },
+      comment: {
+        validators: {
+          stringLength: {
+            min: 10,
+            message:'Molimo unesite najmanje 10 karaktera'
+          },
+          notEmpty: {
+            message: 'Poruka je obavezna'
+          }
+        }
+      }
+    }
+  });
 
     // Validate the form manually
     $('#validateBtn').click(function() {
-        $('#defaultForm').bootstrapValidator('validate');
+      $('#defaultForm').bootstrapValidator('validate');
     });
 
   });
