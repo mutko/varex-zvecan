@@ -154,10 +154,6 @@ $(function() {
     blueimp.Gallery(radionica, options);
   };
 
-  var video = document.getElementById('video');
-  video.addEventListener('click',function(){
-    video.play();
-  },false);
   
   // bootstrap validator
   $(document).ready(function() {
