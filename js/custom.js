@@ -16,13 +16,10 @@ $(function() {
           }]
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
-        var image = new google.maps.MarkerImage('images/mapMarker.png');
         var marker = new google.maps.Marker({
           position: map.getCenter(),
           map: map,
           title: 'VAREX Zvečan',
-          icon: image,
-          labelClass: 'pin'
         });
       };
       google.maps.event.addDomListener(window, 'load', initialize);
