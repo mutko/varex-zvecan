@@ -1,28 +1,6 @@
 $(function() {
 
-      // google map init javascript      
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var myLatlng = new google.maps.LatLng(42.9057304, 20.8373518);
-        var mapOptions = {
-          scrollwheel: false,
-          center: myLatlng,
-          zoom: 17,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          styles: [{
-            stylers: [{
-              saturation: -100
-            }] // grayscale map
-          }]
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({
-          position: map.getCenter(),
-          map: map,
-          title: 'VAREX Zvečan',
-        });
-      };
-      google.maps.event.addDomListener(window, 'load', initialize);
+      
 
     // Use smooth scrooling when clicking on navigation (from https://css-tricks.com/snippets/jquery/smooth-scrolling/)
     $('.navbar a[href*=#]:not([href=#])').click(function() {
@@ -189,7 +167,7 @@ $(function() {
           }
         }
       },
-      comment: {
+      comments: {
         validators: {
           stringLength: {
             min: 10,
