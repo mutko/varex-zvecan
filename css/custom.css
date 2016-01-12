@@ -377,30 +377,14 @@ input:-moz-placeholder { text-overflow: ellipsis; }
 footer {
 	background-color: #c41f1f;
 	color: #FFF;
-	padding: 4em 0;
+	padding: 3em 0;
 	position: relative;
-}
-footer a {
-	color: #FFF;
-}
-footer a:hover {
-	color: #FFF;
-	text-decoration: none;
-}
-footer img {
-	margin-right: 10px;
-	margin-bottom: 10px;
 }
 .info {
 	margin: 1em 0;
 }
-.social-fb {
-	opacity: .8;
-	filter: alpha(opacity=80);
-}
-.social-footer:hover {
-	opacity: .9;
-	filter: alpha(opacity=90);
+.footer-phone {
+	font-size: 1.2em;
 }
 .prava {
 	text-align: center;
@@ -411,6 +395,7 @@ footer img {
 	top: 0;
 	left: 50%;
 	font-size: 1.5em;
+	color: #FFF;
 }
 
 /* 	=============
@@ -439,9 +424,6 @@ footer img {
 	}
 	.jumbotron h3 {
 		font-size: 1.1em;
-	}
-	.panel-title {
-		font-size: 18px;
 	}
 } /* END of custom Extra Small Devices, Phones */ 
 
@@ -497,11 +479,12 @@ footer img {
     	padding: 120px 100px 0;
     	min-height: 650px;
     }
-    #map-canvas {
-	    height: 450px;
-	}
 	.nav-tabs>li>a {
 		padding-left: 30px;
 		padding-right: 30px; 
 	}
+    #map-canvas {
+	    height: 450px;
+	}
+
 }/* end of large desktops styles */
