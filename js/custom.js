@@ -18,10 +18,10 @@ $(function() {
     });
 
     // nav-tabs activation
-    $(document).ready(function(){
-      $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-      });
+    $('.nav-tabs li a').click(function(e){
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      $(this).tab('show');
     });
 
   // bootstrap-tabdrop.js  * http://www.eyecon.ro/bootstrap-tabdrop
@@ -115,6 +115,7 @@ $(function() {
     };
     $.fn.tabdrop.Constructor = TabDrop;
   }( window.jQuery ); // end of tab drop
+  
   // Call the tab drop
   $('.nav-tabs').tabdrop()
 
