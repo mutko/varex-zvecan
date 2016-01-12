@@ -1,9 +1,7 @@
 $(function() {
 
-      
-
     // Use smooth scrooling when clicking on navigation (from https://css-tricks.com/snippets/jquery/smooth-scrolling/)
-    $('.navbar a[href*=#]:not([href=#])').click(function() {
+    $('.navbar a[href*=#]:not([href=#]), .naVrh').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -16,8 +14,106 @@ $(function() {
       }
     });
 
-    // activate accordion on small size (hides tabs)
-    $('.myTab').tabCollapse();
+    // nav-tabs activation
+    $(document).ready(function(){
+      $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+      });
+    });
+
+  // bootstrap-tabdrop.js  * http://www.eyecon.ro/bootstrap-tabdrop
+  !function( $ ) {
+    var WinReszier = (function(){
+      var registered = [];
+      var inited = false;
+      var timer;
+      var resize = function(ev) {
+        clearTimeout(timer);
+        timer = setTimeout(notify, 100);
+      };
+      var notify = function() {
+        for(var i=0, cnt=registered.length; i<cnt; i++) {
+          registered[i].apply();
+        }
+      };
+      return {
+        register: function(fn) {
+          registered.push(fn);
+          if (inited === false) {
+            $(window).bind('resize', resize);
+            inited = true;
+          }
+        },
+        unregister: function(fn) {
+          for(var i=0, cnt=registered.length; i<cnt; i++) {
+            if (registered[i] == fn) {
+              delete registered[i];
+              break;
+            }
+          }
+        }
+      }
+    }());
+    var TabDrop = function(element, options) {
+      this.element = $(element);
+      this.dropdown = $('<li class="dropdown hide pull-right tabdrop"><a class="dropdown-toggle" data-toggle="dropdown" href="#">'+options.text+' <b class="caret"></b></a><ul class="dropdown-menu"></ul></li>')
+                .prependTo(this.element);
+      if (this.element.parent().is('.tabs-below')) {
+        this.dropdown.addClass('dropup');
+      }
+      WinReszier.register($.proxy(this.layout, this));
+      this.layout();
+    };
+    TabDrop.prototype = {
+      constructor: TabDrop,
+      layout: function() {
+        var collection = [];
+        this.dropdown.removeClass('hide');
+        this.element
+          .append(this.dropdown.find('li'))
+          .find('>li')
+          .not('.tabdrop')
+          .each(function(){
+            if(this.offsetTop > 0) {
+              collection.push(this);
+            }
+          });
+        if (collection.length > 0) {
+          collection = $(collection);
+          this.dropdown
+            .find('ul')
+            .empty()
+            .append(collection);
+          if (this.dropdown.find('.active').length == 1) {
+            this.dropdown.addClass('active');
+          } else {
+            this.dropdown.removeClass('active');
+          }
+        } else {
+          this.dropdown.addClass('hide');
+        }
+      }
+    }
+    $.fn.tabdrop = function ( option ) {
+      return this.each(function () {
+        var $this = $(this),
+          data = $this.data('tabdrop'),
+          options = typeof option === 'object' && option;
+        if (!data)  {
+          $this.data('tabdrop', (data = new TabDrop(this, $.extend({}, $.fn.tabdrop.defaults,options))));
+        }
+        if (typeof option == 'string') {
+          data[option]();
+        }
+      })
+    };
+    $.fn.tabdrop.defaults = {
+      text: '<p>Još</p>'
+    };
+    $.fn.tabdrop.Constructor = TabDrop;
+  }( window.jQuery ); // end of tab drop
+  // Call the tab drop
+  $('.nav-tabs').tabdrop()
 
   // blueimp-gallery za kapije
   document.getElementById('kapije').onclick = function (event) {
@@ -107,6 +203,16 @@ $(function() {
     options = {index: link, event: event},
     felna_5 = this.getElementsByTagName('a');
     blueimp.Gallery(felna_5, options);
+  };
+
+  // blueimp-gallery za felna 6
+  document.getElementById('felna_6').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+    link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    felna_6 = this.getElementsByTagName('a');
+    blueimp.Gallery(felna_6, options);
   };
 
   // blueimp-gallery za rolbar

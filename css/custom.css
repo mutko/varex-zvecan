@@ -84,21 +84,6 @@ ul ul {
 	background: url(../images/loading.gif) center no-repeat;
 }
 /* 	=============
-	validation form  */
-p.error, p.success {
-    font-weight: bold;
-    padding: 10px;
-    border: 1px solid;
-}
-p.error {
-    background: #ffc0c0;
-    color: #900;
-}
-p.success {
-    background: #b3ff69;
-    color: #4fa000;
-}
-/* 	=============
 	for IE9  */
 video {
 	width: 100%;
@@ -165,6 +150,7 @@ video {
 	height: 70px;
 	background-color: #000;
 }
+.navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
 	background-color: #000;
 }
@@ -221,11 +207,19 @@ video {
 .jumbotron h3 {
 	font-size: 1.3em;
 	text-transform: uppercase;
+	line-height: 1.7;
+}
+.pozovite {
+	background: rgba(0,0,0,.5);
+	padding: 15px 0; 
 }
 .phone {
 	color: #c41f1f;
 	font-size: 1.6em;
 	text-shadow: 5px 5px 5px rgb(0,0,0);
+}
+.jumbotron .glyphicon {
+	color: #c41f1f;
 }
 /* 	=============
 	o nama  */
@@ -265,12 +259,12 @@ video {
 /* 	=============
 	radovi foto  */
 #radovi .tab-pane [class^="col-"],
-#radionica [class^="col-"],
-.panel-body [class^="col-"] {
+#radionica [class^="col-"] {
 	padding-left: 0;
 	padding-right: 0;
 } /* jedan do drugog, no padding */
-#radovi .nav-tabs {
+.nav-tabs {
+	position: relative;
 	border-bottom: 0;
 }
 .nav-tabs > li > a {
@@ -287,6 +281,13 @@ video {
 	background: none;
 	color: #FFF;
 }
+.dropdown p {
+	display: inline-block;
+	margin-bottom: 0;
+}
+.dropdown-menu {
+	font-size: .9em;
+}
 .gallery img,
 #radionica img {
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
@@ -299,31 +300,6 @@ video {
 	filter: none;
   	-webkit-filter: grayscale(0%);
 }
-/* radovi foto visible xs accordion */
-.panel {
-	background-color: transparent;
-}
-.panel-default {
-	border: none;
-}
-.panel-default > .panel-heading {
-	background-color: transparent;
-	border: none;
-	color: #FFF;
-}
-.panel-title {
-	font-size: 24px;
-	text-align: left;
-}
-.panel-title span {
-	padding-right: 15px;
-}
-.panel-title a:hover {
-	color: #c41f1f;
-}
-.panel-body {
-	padding: 0;
-}
 /* 	=============
 	radovi video  */
 #video-section {
@@ -332,14 +308,13 @@ video {
 /* 	=============
 	radionica  */
 #radionica-gallery {
-	margin-top: 80px;
+	margin: 80px 0 120px;
 }
 /* 	=============
 	google map  */
 #map-canvas {
     width: 100%;
-    height: 400px;
-    margin-top: 80px;
+    height: 300px;
 }
 /* 	=============
 	contact  */
@@ -426,7 +401,7 @@ footer img {
 	text-align: center;
 	font-size: .8em;
 }
-.na-vrh {
+.naVrh {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -509,15 +484,19 @@ footer img {
 	.navbar-brand {
 		padding: 0 100px;
 	}
-	.nav>li>a {
-		padding-left: 45px;
-		padding-right: 45px; 
+	.navbar-nav>li>a {
+		padding-left: 55px;
+		padding-right: 55px; 
 	}
     .jumbotron {
     	padding: 120px 100px 0;
     	min-height: 650px;
     }
     #map-canvas {
-	    height: 600px;
+	    height: 450px;
+	}
+	.nav-tabs>li>a {
+		padding-left: 30px;
+		padding-right: 30px; 
 	}
 }/* end of large desktops styles */
