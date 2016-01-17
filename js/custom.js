@@ -160,65 +160,15 @@ $(function() {
   };
   
   // blueimp-gallery za felna 1
-  document.getElementById('felna_1').onclick = function (event) {
+  document.getElementById('felne').onclick = function (event) {
     event = event || window.event;
     var target = event.target || event.srcElement,
     link = target.src ? target.parentNode : target,
     options = {index: link, event: event},
-    felna_1 = this.getElementsByTagName('a');
-    blueimp.Gallery(felna_1, options);
+    felne = this.getElementsByTagName('a');
+    blueimp.Gallery(felne, options);
   };
   
-  // blueimp-gallery za felna 2
-  document.getElementById('felna_2').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-    link = target.src ? target.parentNode : target,
-    options = {index: link, event: event},
-    felna_2 = this.getElementsByTagName('a');
-    blueimp.Gallery(felna_2, options);
-  };
-  
-  // blueimp-gallery za felna 3
-  document.getElementById('felna_3').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-    link = target.src ? target.parentNode : target,
-    options = {index: link, event: event},
-    felna_3 = this.getElementsByTagName('a');
-    blueimp.Gallery(felna_3, options);
-  };
-  
-  // blueimp-gallery za felna 4
-  document.getElementById('felna_4').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-    link = target.src ? target.parentNode : target,
-    options = {index: link, event: event},
-    felna_4 = this.getElementsByTagName('a');
-    blueimp.Gallery(felna_4, options);
-  };
-  
-  // blueimp-gallery za felna 5
-  document.getElementById('felna_5').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-    link = target.src ? target.parentNode : target,
-    options = {index: link, event: event},
-    felna_5 = this.getElementsByTagName('a');
-    blueimp.Gallery(felna_5, options);
-  };
-
-  // blueimp-gallery za felna 6
-  document.getElementById('felna_6').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-    link = target.src ? target.parentNode : target,
-    options = {index: link, event: event},
-    felna_6 = this.getElementsByTagName('a');
-    blueimp.Gallery(felna_6, options);
-  };
-
   // blueimp-gallery za rolbar
   document.getElementById('rolbar').onclick = function (event) {
     event = event || window.event;
